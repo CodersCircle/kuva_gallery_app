@@ -1,0 +1,108 @@
+name: kuva_gallery_app
+description: Kuva Gallery - Professional Gallery & Media Vault app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: 1.0.8
+
+  # State management
+  flutter_riverpod: 2.6.1
+
+  # Navigation
+  go_router: 14.8.1
+
+  # Media access
+  photo_manager: 3.8.3
+  photo_manager_image_provider: 2.2.0
+
+  # Grid & images
+  flutter_staggered_grid_view: 0.7.0
+  shimmer: 3.0.0
+  cached_network_image: 3.4.1
+  photo_view: 0.15.0
+
+  # Video — media_kit (libmpv) + proxy transcode for heavy DJI 4K HEVC
+  media_kit: ^1.2.0
+  media_kit_video: ^1.3.0
+  media_kit_libs_android_video: ^1.3.7
+  media_kit_libs_ios_video: ^1.1.4
+  ffmpeg_kit_flutter_new_min_gpl: ^2.6.2
+
+  # Local DB
+  isar: 3.1.0+1
+  isar_flutter_libs: 3.1.0+1
+
+  # Security
+  flutter_secure_storage: 10.0.0
+  local_auth: 3.0.2
+  encrypt: 5.0.3
+  crypto: 3.0.6
+
+  # Permissions & background
+  permission_handler: 11.4.0
+  workmanager: 0.10.8
+
+  # Networking
+  dio: 5.8.0+1
+
+  # Cloud connectors
+  google_sign_in: 6.3.0
+  googleapis: 14.0.0
+  googleapis_auth: 1.6.0
+  cloudinary_flutter: 1.3.0
+  cloudinary_url_gen: 1.8.0
+  aws_s3_upload_lite: 0.1.7
+
+  # Compression & prefs
+  flutter_image_compress: 2.4.0
+  shared_preferences: 2.5.3
+  share_plus: 13.3.0
+  visibility_detector: 0.4.0+2
+  screen_brightness: 2.1.7
+  flutter_volume_controller: 1.3.4
+
+  # Utilities
+  path_provider: 2.1.5
+  path: 1.9.1
+  uuid: 4.5.1
+  connectivity_plus: 6.1.4
+  intl: 0.20.2
+  google_fonts: 8.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+  build_runner: 2.4.13
+  isar_generator: 3.1.0+1
+  flutter_launcher_icons: 0.14.3
+  flutter_native_splash: 2.4.6
+
+dependency_overrides:
+  wakelock_plus: 1.6.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/kuva_logo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/kuva_logo.png
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/images/kuva_logo.png
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/kuva_logo.png
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/kuva_logo.png

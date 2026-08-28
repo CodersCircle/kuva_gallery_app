@@ -1,1 +1,1 @@
-# kuva_gallery_app
+# Kuva Gallery App
